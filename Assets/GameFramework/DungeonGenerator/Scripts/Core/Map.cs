@@ -7,17 +7,17 @@ namespace MyCompany.DungeonGenerator.Core
     public class Map
     {
         // *** Private Members ***
-        private MapTemplate _mapTemplate;
-        private Vector2Int _size;
-        private Vector2Int[] _cells;
-        private Room[] _rooms;
+        private MapTemplate mapTemplate;
+        private Vector2Int size;
+        private Vector2Int[] cells;
+        private Room[] rooms;
 
         /// <summary>
         /// Constructor
         /// </summary>
         public Map(MapTemplate mapTemplate)
         {
-            _mapTemplate = mapTemplate;
+            this.mapTemplate = mapTemplate;
             Init();
         }
 
@@ -29,7 +29,7 @@ namespace MyCompany.DungeonGenerator.Core
         private void GenerateRooms()
         {
             /* Initialize the room count randomly within the range specified by the template */
-            _rooms = new Room[Random.Range(_mapTemplate.MinRoomCount, _mapTemplate.MaxRoomCount)];
+            rooms = new Room[Random.Range(mapTemplate.MinRoomCount, mapTemplate.MaxRoomCount)];
             
         }
     }
