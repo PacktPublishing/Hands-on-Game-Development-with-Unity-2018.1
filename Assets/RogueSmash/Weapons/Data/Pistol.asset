@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f2be51abf46184e8f71cf7f8bb6e1b, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  weaponData:
+    maxAmmo: 10
+    minFireInterval: 0.2
+    reloadTime: 0.5
+    doesAutoReload: 1
+    baseDamage: 1
+    projectileSpeed: 40
+    projectilePrefab: {fileID: 1565618248048806, guid: 0127bdf6c60816b488133b4d33394877,
+      type: 2}
